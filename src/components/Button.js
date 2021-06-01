@@ -1,18 +1,16 @@
 import React from 'react'
+
 import PropTypes from 'prop-types'
 
-const Button = props => {
-  const { name } = props
+const Button = (props) => {
+  const { name } = props;
   return (
-    <div>
-      <button className='button' type='button'>
-          {name}
-      </button>  
-    </div>
-  )
-}
-
-Button.prototype = {
+    <button className="buttons" type="button">
+      {name}
+    </button>
+  );
+};
+Button.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
