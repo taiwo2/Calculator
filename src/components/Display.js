@@ -11,11 +11,11 @@ const Display = (props) => {
 };
 
 Display.prototype = {
-  result: PropTypes.string,
+  result: PropTypes.string.isRequired
 };
 
 Display.defaultProps = {
-  result: 0,
+  result: ;'0',
 };
 
 export default Display;
