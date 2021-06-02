@@ -5,9 +5,11 @@ import PropTypes from 'prop-types'
 const Button = (props) => {
   const { name } = props;
   return (
-    <button className="buttons" type="button">
-      {name}
-    </button>
+    <div>
+      <button className="buttons" type="button">
+        { name }
+      </button>
+    </div>  
   );
 };
 

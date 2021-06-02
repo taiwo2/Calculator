@@ -1,10 +1,15 @@
 import React from 'react';
-
+import Display from './Display'
+import ButtonPanel from './ButtonPanel'
+import '../App.css'
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <React.Fragment>
+      <div className="App">
+        <Display />
+        <ButtonPanel />
+      </div>
+    </React.Fragment>
   );
 }
 
