@@ -1,37 +1,39 @@
 import React from 'react';
+// eslint-disable-next-line import/no-named-as-default
 import Button from './Button';
 
+const nums = ['7', '8', '9', 'x'];
+const nums1 = ['4', '5', '6', '-'];
+const nums2 = ['1', '2', '3', '+'];
+const nums3 = ['0', '.', '='];
+const topOps = ['AC', '+/-', '%', '÷'];
 const ButtonPanel = () => (
   <div>
     <div className="buttonpanel">
       <div className="top-btn">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" />
+        {topOps.map((top) => (
+          <Button name={top} key={top} />
+        ))}
       </div>
       <div className="top-btn">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="X" />
+        {nums.map((num) => (
+          <Button name={num} key={num} />
+        ))}
       </div>
       <div className="top-btn">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" />
+        {nums1.map((num) => (
+          <Button name={num} key={num} />
+        ))}
       </div>
       <div className="top-btn">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" />
+        {nums2.map((num) => (
+          <Button name={num} key={num} />
+        ))}
       </div>
       <div className="top-btn">
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
+        {nums3.map((num) => (
+          <Button name={num} key={num} />
+        ))}
       </div>
     </div>
   </div>
