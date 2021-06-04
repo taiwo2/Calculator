@@ -9,18 +9,18 @@ const calculate = (data, btnName) => {
     next = '';
     operation = null;
   } else if (
-    btnName === '+' ||
-    btnName === '-' ||
-    btnName === '/' ||
-    btnName === 'x' ||
-    btnName === '%'
+    btnName === '+'
+    || btnName === '-'
+    || btnName === '/'
+    || btnName === 'x'
+    || btnName === '%'
   ) {
     operation = !next ? btnName : null;
   } else if (btnName === '+/-') {
     if (next) {
-      next = next * (-1).toString();
+      next *= (-1).toString();
     } else if (total) {
-      total = total * (-1).toString();
+      total *= (-1).toString();
     }
   } else if (btnName === '=') {
     total = operate(total, next, operation);
