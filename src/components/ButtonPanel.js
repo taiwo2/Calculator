@@ -1,42 +1,89 @@
 import React from 'react';
-// eslint-disable-next-line import/no-named-as-default
 import Button from './Button';
 
-const nums = ['7', '8', '9', 'x'];
-const nums1 = ['4', '5', '6', '-'];
-const nums2 = ['1', '2', '3', '+'];
-const nums3 = ['0', '.', '='];
-const topOps = ['AC', '+/-', '%', '÷'];
-const ButtonPanel = () => (
-  <div>
+const groupOne = [
+  { btn: 'AC', color: 'e0e0e0' },
+  { btn: '+/-', color: 'e0e0e0' },
+  { btn: '%', color: 'e0e0e0' },
+  { btn: '÷' },
+];
+const groupTwo = [
+  { btn: '7', color: 'e0e0e0' },
+  { btn: '8', color: 'e0e0e0' },
+  { btn: '9', color: 'e0e0e0' },
+  { btn: 'X' },
+];
+const groupThree = [
+  { btn: '4', color: 'e0e0e0' },
+  { btn: '5', color: 'e0e0e0' },
+  { btn: '6', color: 'e0e0e0' },
+  { btn: '-' },
+];
+const groupFour = [
+  { btn: '1', color: 'e0e0e0' },
+  { btn: '2', color: 'e0e0e0' },
+  { btn: '3', color: 'e0e0e0' },
+  { btn: '+' },
+];
+const groupFive = [
+  { btn: '0', color: 'e0e0e0', wide: true },
+  { btn: '.', color: 'e0e0e0' },
+  { btn: '=' },
+];
+
+export default function ButtonPanel() {
+  return (
     <div className="buttonpanel">
-      <div className="top-btn">
-        {topOps.map((top) => (
-          <Button name={top} key={top} />
+      <div>
+        {groupOne.map((item) => (
+          <Button
+            button={item.btn}
+            key={item.btn}
+            wide={item.wide}
+            color={item.color}
+          />
         ))}
       </div>
-      <div className="top-btn">
-        {nums.map((num) => (
-          <Button name={num} key={num} />
+      <div>
+        {groupTwo.map((item) => (
+          <Button
+            button={item.btn}
+            key={item.btn}
+            wide={item.wide}
+            color={item.color}
+          />
         ))}
       </div>
-      <div className="top-btn">
-        {nums1.map((num) => (
-          <Button name={num} key={num} />
+      <div>
+        {groupThree.map((item) => (
+          <Button
+            button={item.btn}
+            key={item.btn}
+            wide={item.wide}
+            color={item.color}
+          />
         ))}
       </div>
-      <div className="top-btn">
-        {nums2.map((num) => (
-          <Button name={num} key={num} />
+      <div>
+        {groupFour.map((item) => (
+          <Button
+            button={item.btn}
+            key={item.btn}
+            wide={item.wide}
+            color={item.color}
+          />
         ))}
       </div>
-      <div className="top-btn">
-        {nums3.map((num) => (
-          <Button name={num} key={num} />
+      <div>
+        {groupFive.map((item) => (
+          <Button
+            button={item.btn}
+            key={item.btn}
+            wide={item.wide}
+            color={item.color}
+          />
         ))}
       </div>
     </div>
-  </div>
-);
-
-export default ButtonPanel;
+  );
+}

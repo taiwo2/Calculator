@@ -2,38 +2,27 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-const Button = (props) => {
-  const {
-    name, color, half, HandleClick,
-  } = props;
-  const styling = {
-    width: half ? '50%' : '25%',
-    background: color,
-  };
+const styles = (color, size) => ({
+  backgroundColor: color,
+  width: size ? '50%' : '25%',
+});
+
+export default function Button({
+  button,
+  wide = false,
+  color = '#f5913e',
+}) {
   return (
-    <div>
-      <button
-        onClick={() => HandleClick}
-        className="buttons"
-        style={styling}
-        type="button"
-      >
-        { name }
-      </button>
-    </div>
+    <input
+      type="button"
+      value={button}
+      style={styles(color, wide)}
+    />
   );
-};
+}
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired,
-  HandleClick: PropTypes.func.isRequired,
-  half: false,
-  color: 'orange',
+  button: PropTypes.string.isRequired,
+  wide: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
-
-Button.defaultProps = {
-  half: false,
-  color: 'orange',
-};
-
-export default Button;

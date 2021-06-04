@@ -20,16 +20,35 @@ body {
 
 .buttonpanel {
   background-color: #111;
-  width: 250px;
+  width: 100%;
   height: 340px;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  max-width: 100%;
 }
 
+.buttonpanel div {
+    display: flex;
+}
+
+.buttonpanel input[type='button'] {
+  height: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.322);
+  font-size: 3rem;
+}
+
+.app {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
 .top-btn {
   display: flex;
-  color: '#e0e0e0'
 }
 
 .display {
@@ -40,6 +59,16 @@ body {
   background-color: #111;
   padding: 20px 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width: 100%;
+  background-color: #848793;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+  padding: 1rem;
 }
 
 .display small {
@@ -108,4 +137,3 @@ button.light-grey {
 button.ac {
   margin-right: 50%;
 }
-
