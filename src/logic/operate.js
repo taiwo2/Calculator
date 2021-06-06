@@ -21,7 +21,7 @@ const operate = (number1, number2, operator) => {
       res = num1.div(num2);
       break;
     case '%':
-      res = num1.times(num2).div(100);
+      res = num1.mod(num2).div(100);
       break;
     default:
       res = 0;
