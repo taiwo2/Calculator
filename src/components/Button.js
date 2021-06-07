@@ -17,6 +17,7 @@ export default function Button({
       type="button"
       value={button}
       style={styles(color, wide)}
+      Onclick={() => HandleClick(button)}
     />
   );
 }
@@ -25,4 +26,5 @@ Button.propTypes = {
   button: PropTypes.string.isRequired,
   wide: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  HandleClick: PropTypes.func.isRequired
 };
