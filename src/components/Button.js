@@ -11,13 +11,14 @@ export default function Button({
   button,
   wide = false,
   color = '#f5913e',
+  HandleClick,
 }) {
   return (
     <input
       type="button"
       value={button}
       style={styles(color, wide)}
-      Onclick={() => HandleClick(button)}
+      onClick={() => HandleClick(button)}
     />
   );
 }
@@ -26,5 +27,5 @@ Button.propTypes = {
   button: PropTypes.string.isRequired,
   wide: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  HandleClick: PropTypes.func.isRequired
+  HandleClick: PropTypes.func.isRequired,
 };

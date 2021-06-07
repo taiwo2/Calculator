@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 const groupOne = [
@@ -31,7 +32,7 @@ const groupFive = [
   { btn: '=' },
 ];
 
-export default function ButtonPanel() {
+export default function ButtonPanel({ handleClick }) {
   return (
     <div className="buttonpanel">
       <div>
@@ -41,6 +42,7 @@ export default function ButtonPanel() {
             key={item.btn}
             wide={item.wide}
             color={item.color}
+            handleClick={handleClick}
           />
         ))}
       </div>
@@ -51,6 +53,7 @@ export default function ButtonPanel() {
             key={item.btn}
             wide={item.wide}
             color={item.color}
+            handleClick={handleClick}
           />
         ))}
       </div>
@@ -61,6 +64,7 @@ export default function ButtonPanel() {
             key={item.btn}
             wide={item.wide}
             color={item.color}
+            handleClick={handleClick}
           />
         ))}
       </div>
@@ -71,6 +75,7 @@ export default function ButtonPanel() {
             key={item.btn}
             wide={item.wide}
             color={item.color}
+            handleClick={handleClick}
           />
         ))}
       </div>
@@ -81,9 +86,14 @@ export default function ButtonPanel() {
             key={item.btn}
             wide={item.wide}
             color={item.color}
+            handleClick={handleClick}
           />
         ))}
       </div>
     </div>
   );
 }
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
