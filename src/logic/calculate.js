@@ -1,37 +1,36 @@
 import operate from './operate';
 
-const calculate = (data, btnName) => {
-  const newData = { ...data };
-  let { total, next, operation } = newData;
+const calculate = ({ total, next, operation }, buttonName) => {
+  let obj;
 
-  if (btnName === 'AC') {
-    total = '';
-    next = '';
-    operation = null;
-  } else if (
-    btnName === '+'
-    || btnName === '-'
-    || btnName === '/'
-    || btnName === 'x'
-    || btnName === '%'
-  ) {
-    operation = !next ? btnName : null;
-  } else if (btnName === '+/-') {
-    if (next) {
-      next *= (-1).toString();
-    } else if (total) {
-      total *= (-1).toString();
+  if (/[0-9]|\./.test(buttonName)) {
+    if (buttonName === '.' && total.includes('.')) {
+      obj = { total };
     }
-  } else if (btnName === '=') {
-    total = operate(total, next, operation);
-    next = '';
-    operation = null;
-  } else if (!operation) {
-    total += btnName;
-  } else {
-    next += btnName;
+    obj = {
+      total: total === null ? buttonName : total + buttonName,
+    };
   }
-  return { total, next, operation };
+  if (/\+|X|-|÷/.test(buttonName)) {
+    obj = {
+      operation: buttonName,
+      next: total,
+      total: '',
+    };
+  }
+  if (buttonName === '=') {
+    obj = { total: operate(next, total, operation) };
+  }
+  if (buttonName === '%') {
+    obj = { total: operate(next, total, buttonName) };
+  }
+  if (buttonName === 'AC') {
+    obj = { total: null, next: null, operation: null };
+  }
+  if (buttonName === '+/-') {
+    obj = { total: total > 0 ? total * -1 : total * 1 };
+  }
+  return obj;
 };
 
 export default calculate;
