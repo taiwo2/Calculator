@@ -5,7 +5,7 @@
 
 ## Live Demo
 
--[live-version](https://lit-bastion-93387.herokuapp.com/)
+![live-version](https://adeolty.herokuapp.com/)
 
 ## Built with
 
