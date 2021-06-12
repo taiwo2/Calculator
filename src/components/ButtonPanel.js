@@ -95,5 +95,5 @@ export default function ButtonPanel({ handleClick }) {
 }
 
 ButtonPanel.propTypes = {
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
 };

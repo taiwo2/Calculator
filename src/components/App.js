@@ -23,7 +23,7 @@ class App extends Component {
     const { total } = this.state;
     return (
       <div className="app">
-        <Display result={total === null ? 0 : total} />
+        <Display result={total === null ? '0' : total} />
         <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
