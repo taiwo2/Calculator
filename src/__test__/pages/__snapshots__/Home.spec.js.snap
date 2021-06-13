@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render Home page 1`] = `
+<div
+  className="home"
+>
+  <h1>
+    Welcome to our page!
+  </h1>
+  <p>
+    This is a actually a great trick you can do with your iPhones calculator app. It's also very easy to do. First I'll explain what happens when you perform this trick then I'll explain how to do it. As I describe what happens imagine you're witnessing it being performed on you.
+  </p>
+</div>
+`;

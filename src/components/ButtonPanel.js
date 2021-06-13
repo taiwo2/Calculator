@@ -34,7 +34,7 @@ const groupFive = [
 
 export default function ButtonPanel({ handleClick }) {
   return (
-    <div className="buttonpanel">
+    <div className="buttonpanel" data-testid="button-panel">
       <div>
         {groupOne.map((item) => (
           <Button
@@ -95,5 +95,5 @@ export default function ButtonPanel({ handleClick }) {
 }
 
 ButtonPanel.propTypes = {
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
 };
