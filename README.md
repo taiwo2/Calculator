@@ -5,7 +5,7 @@
 
 ## Live Demo
 
--[live-version](https://lit-bastion-93387.herokuapp.com/)
+-[live-version](https://adeolty.herokuapp.com/)
 
 ## Built with
 
@@ -19,7 +19,7 @@
 
 - Clone the repo `https://github.com/taiwo2/Calculator.git`
 - cd `into` the project
-- Run `git pull origin app`
+- Run `git pull origin Math`
 - Run `yarn install` or `npm install` to install dependencies
 - On the terminal run `npm run start` open up the live server
 - To run tests write `npm run test` on the terminal
