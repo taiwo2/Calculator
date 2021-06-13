@@ -12,163 +12,256 @@ exports[`should correctly render Calculator page 1`] = `
   <div
     className="calculator__box"
   >
-    <div>
+    <div
+      className="app"
+    >
       <div
         className="display"
         data-testid="show-panel"
       >
         0
-        
-        
       </div>
       <div
-        className="calculator "
+        className="buttonpanel"
         data-testid="button-panel"
       >
-        <div
-          className="nums-container "
-        >
-          <div
-            className="top-btn"
-          >
-            <button
-              className="light-grey"
-              data-testid="button"
-              onClick={[Function]}
-            >
-              AC
-            </button>
-            <button
-              className="light-grey"
-              data-testid="button"
-              onClick={[Function]}
-            >
-              +/-
-            </button>
-            <button
-              className="light-grey"
-              data-testid="button"
-              onClick={[Function]}
-            >
-              %
-            </button>
-          </div>
-          <button
-            className="dark-grey false"
+        <div>
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            7
-          </button>
-          <button
-            className="dark-grey false"
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="AC"
+          />
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            8
-          </button>
-          <button
-            className="dark-grey false"
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="+/-"
+          />
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            9
-          </button>
-          <button
-            className="dark-grey false"
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="%"
+          />
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            4
-          </button>
-          <button
-            className="dark-grey false"
-            data-testid="button"
-            onClick={[Function]}
-          >
-            5
-          </button>
-          <button
-            className="dark-grey false"
-            data-testid="button"
-            onClick={[Function]}
-          >
-            6
-          </button>
-          <button
-            className="dark-grey false"
-            data-testid="button"
-            onClick={[Function]}
-          >
-            1
-          </button>
-          <button
-            className="dark-grey false"
-            data-testid="button"
-            onClick={[Function]}
-          >
-            2
-          </button>
-          <button
-            className="dark-grey false"
-            data-testid="button"
-            onClick={[Function]}
-          >
-            3
-          </button>
-          <button
-            className="dark-grey big-h"
-            data-testid="button"
-            onClick={[Function]}
-          >
-            0
-          </button>
-          <button
-            className="light-grey"
-            data-testid="button"
-            onClick={[Function]}
-          >
-            .
-          </button>
+            style={
+              Object {
+                "backgroundColor": "#f5913e",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="÷"
+          />
         </div>
-        <div
-          className="ops-container"
-        >
-          <button
-            className="orange"
+        <div>
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            /
-          </button>
-          <button
-            className="orange"
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="7"
+          />
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            x
-          </button>
-          <button
-            className="orange"
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="8"
+          />
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            -
-          </button>
-          <button
-            className="orange"
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="9"
+          />
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            +
-          </button>
-          <button
-            className="orange"
+            style={
+              Object {
+                "backgroundColor": "#f5913e",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="X"
+          />
+        </div>
+        <div>
+          <input
             data-testid="button"
             onClick={[Function]}
-          >
-            =
-          </button>
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="4"
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="5"
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="6"
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#f5913e",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="-"
+          />
+        </div>
+        <div>
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="1"
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="2"
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="3"
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#f5913e",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="+"
+          />
+        </div>
+        <div>
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "50%",
+              }
+            }
+            type="button"
+            value="0"
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "e0e0e0",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="."
+          />
+          <input
+            data-testid="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#f5913e",
+                "width": "25%",
+              }
+            }
+            type="button"
+            value="="
+          />
         </div>
       </div>
     </div>

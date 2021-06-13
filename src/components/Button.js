@@ -16,6 +16,7 @@ export default function Button({
   return (
     <input
       type="button"
+      data-testid="button"
       value={button}
       style={styles(color, wide)}
       onClick={() => handleClick(button)}
