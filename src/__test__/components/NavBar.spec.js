@@ -8,7 +8,7 @@ test('should render the Header component', () => {
   render(
     <Router>
       <NavBar />
-    </Router>
+    </Router>,
   );
   const header = screen.getAllByTestId('header');
   expect(header[0]).toHaveTextContent('Math Magicians');

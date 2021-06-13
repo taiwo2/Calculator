@@ -4,10 +4,8 @@ const operate = (number1, number2, operator) => {
   if (!number1 || !number2 || !operator) return '0';
 
   let res = 0;
-  const num1 =
-    typeof number1 !== 'number' ? Big(Number(number1)) : Big(number1);
-  const num2 =
-    typeof number2 !== 'number' ? Big(Number(number2)) : Big(number2);
+  const num1 = typeof number1 !== 'number' ? Big(Number(number1)) : Big(number1);
+  const num2 = typeof number2 !== 'number' ? Big(Number(number2)) : Big(number2);
 
   switch (operator) {
     case '+':

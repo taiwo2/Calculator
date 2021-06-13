@@ -34,7 +34,7 @@ const groupFive = [
 
 export default function ButtonPanel({ handleClick }) {
   return (
-    <div className="buttonpanel" data-testid='button-panel'>
+    <div className="buttonpanel" data-testid="button-panel">
       <div>
         {groupOne.map((item) => (
           <Button
